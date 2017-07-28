@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		.div2{
+			width: 100px;
+			height: 100px;
+			background: hotpink;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div class="div2">
+		
+	</div>
+</body>
+	<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$('.div2').toggle(function(){
+				$('.div2').animate({left:'200px'},5000)
+			},function(){
+				$('.div2').animate({left:'2px'},5000)
+			})
+			
+		})
+	</script>
+</html>
